@@ -140,6 +140,63 @@ export const HacktoberfestModal: React.FC<HacktoberfestModalProps> = ({ isOpen, 
             </p>
           </div>
 
+          {/* Demo Screenshots Section */}
+          <div className="space-y-3 pt-3 border-t border-slate-100">
+            <div className="flex items-center justify-between">
+              <h4 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <Code2 className="w-4 h-4 text-teal-700" />
+                Demo Screenshots for Your Post
+              </h4>
+              <span className="text-[11px] text-slate-500">Web & Mobile Assets</span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Desktop Screenshot */}
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-800">
+                  <span>Desktop Web Dashboard</span>
+                  <a
+                    href="/src/assets/images/screenshot_desktop_ui_1791178629755.jpg"
+                    download="carolina_cna_ready_desktop.jpg"
+                    className="text-teal-700 hover:underline text-[11px]"
+                  >
+                    Download (16:9)
+                  </a>
+                </div>
+                <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+                  <img
+                    src="/src/assets/images/screenshot_desktop_ui_1791178629755.jpg"
+                    alt="Carolina CNA Ready Desktop UI Screenshot"
+                    className="w-full aspect-[16/9] object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+
+              {/* Mobile Screenshot */}
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-800">
+                  <span>Mobile Smartphone View</span>
+                  <a
+                    href="/src/assets/images/screenshot_mobile_ui_1791178638091.jpg"
+                    download="carolina_cna_ready_mobile.jpg"
+                    className="text-teal-700 hover:underline text-[11px]"
+                  >
+                    Download (9:16)
+                  </a>
+                </div>
+                <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+                  <img
+                    src="/src/assets/images/screenshot_mobile_ui_1791178638091.jpg"
+                    alt="Carolina CNA Ready Mobile UI Screenshot"
+                    className="w-full aspect-[16/9] object-cover object-top"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="flex justify-end pt-2">
             <button
               onClick={onClose}
