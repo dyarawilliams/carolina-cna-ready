@@ -1,0 +1,7 @@
+{
+  "name": "Carolina CNA Ready",
+  "description": "AI-powered South Carolina CNA certification navigator and confidence coach grounded in Credentia SC candidate handbook and state registry requirements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
