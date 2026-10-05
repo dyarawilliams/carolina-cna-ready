@@ -108,6 +108,38 @@ export const HacktoberfestModal: React.FC<HacktoberfestModalProps> = ({ isOpen, 
             </div>
           </div>
 
+          {/* DEV.to Cover Image Section */}
+          <div className="space-y-3 pt-2 border-t border-slate-100">
+            <div className="flex items-center justify-between">
+              <h4 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-teal-700" />
+                DEV.to Submission Cover Banner
+              </h4>
+              <span className="text-[11px] text-slate-500">16:9 Banner · @dyarawilliams</span>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-950 relative group">
+              <img
+                src="/src/assets/images/devto_cover_image_1791177992255.jpg"
+                alt="DEV.to Hacktoberfest Cover for Carolina CNA Ready by dyarawilliams"
+                className="w-full aspect-[16/9] object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <a
+                  href="/src/assets/images/devto_cover_image_1791177992255.jpg"
+                  download="carolina_cna_ready_devto_cover.jpg"
+                  className="px-4 py-2 bg-white/95 text-slate-900 font-semibold text-xs rounded-lg shadow-md hover:bg-white transition-colors"
+                >
+                  Download Full-Res Cover Image
+                </a>
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-500">
+              Generated for your DEV.to challenge post with DEV logo and username <code className="text-teal-700 font-semibold">@dyarawilliams</code>.
+            </p>
+          </div>
+
           <div className="flex justify-end pt-2">
             <button
               onClick={onClose}
