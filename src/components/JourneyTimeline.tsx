@@ -89,7 +89,7 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
           Certification Sequence (Training → Registry)
         </h3>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-2 w-full">
           {SC_JOURNEY_STAGES.map((stage, idx) => {
             const status = getStageStatus(stage, idx);
             const isSelected = stage.id === selectedStageId;
@@ -99,7 +99,7 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
               <button
                 key={stage.id}
                 onClick={() => setSelectedStageId(stage.id)}
-                className={`flex flex-col items-start p-3 rounded-xl border text-left transition-all cursor-pointer relative ${
+                className={`flex flex-col items-start p-2.5 sm:p-3 rounded-xl border text-left transition-all cursor-pointer relative min-w-0 w-full ${
                   isSelected
                     ? 'border-teal-700 bg-teal-50/60 ring-2 ring-teal-700/20 shadow-xs'
                     : 'border-slate-200 hover:border-slate-300 bg-white'
@@ -110,18 +110,18 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
                     0{stage.order}
                   </span>
                   {status === 'completed' && (
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                   )}
                   {status === 'action_needed' && (
-                    <span className="w-2.5 h-2.5 rounded-full bg-teal-600 animate-pulse" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-teal-600 animate-pulse shrink-0" />
                   )}
                 </div>
 
-                <div className="font-semibold text-xs text-slate-900 leading-tight">
+                <div className="font-semibold text-xs text-slate-900 leading-tight break-words w-full">
                   {stage.title}
                 </div>
 
-                <div className="text-[10px] text-slate-500 mt-1 capitalize">
+                <div className="text-[10px] text-slate-500 mt-1 capitalize truncate w-full">
                   {isCurrent ? 'Current Focus' : status.replace('_', ' ')}
                 </div>
               </button>
