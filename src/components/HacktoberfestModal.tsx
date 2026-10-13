@@ -1,12 +1,13 @@
 import React from 'react';
-import { X, Heart, Sparkles, Terminal, ShieldCheck, Cpu, Code2, ExternalLink } from 'lucide-react';
+import { X, Heart, Sparkles, Terminal, ShieldCheck, Cpu, Code2, ExternalLink, Camera } from 'lucide-react';
 
 interface HacktoberfestModalProps {
   isOpen: boolean;
   onClose: () => void;
+  openScreenshotStudio?: () => void;
 }
 
-export const HacktoberfestModal: React.FC<HacktoberfestModalProps> = ({ isOpen, onClose }) => {
+export const HacktoberfestModal: React.FC<HacktoberfestModalProps> = ({ isOpen, onClose, openScreenshotStudio }) => {
   if (!isOpen) return null;
 
   return (
@@ -147,8 +148,23 @@ export const HacktoberfestModal: React.FC<HacktoberfestModalProps> = ({ isOpen, 
                 <Code2 className="w-4 h-4 text-teal-700" />
                 Demo Screenshots for Your Post
               </h4>
-              <span className="text-[11px] text-slate-500">Web & Mobile Assets</span>
+              {openScreenshotStudio && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    openScreenshotStudio();
+                  }}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-50 hover:bg-teal-100 border border-teal-200 text-teal-800 rounded-lg text-xs font-semibold cursor-pointer transition-colors"
+                >
+                  <Camera className="w-3.5 h-3.5 text-teal-700" />
+                  Capture Real Live Website Screenshots
+                </button>
+              )}
             </div>
+            <p className="text-xs text-slate-600">
+              Generate 100% genuine, pixel-perfect PNGs rendered directly from your live website at <code className="text-teal-700 font-semibold">https://carolina-cna-ready.ai.studio/</code>.
+            </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Desktop Screenshot */}

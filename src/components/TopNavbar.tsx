@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Terminal, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Terminal, CheckCircle2, Camera } from 'lucide-react';
 
 interface TopNavbarProps {
   activeTab: string;
@@ -7,6 +7,7 @@ interface TopNavbarProps {
   openAssessment: () => void;
   openOllamaModal: () => void;
   openHacktoberfestModal: () => void;
+  openScreenshotStudio: () => void;
   isOllamaConnected: boolean;
   activeModelName: string;
 }
@@ -17,6 +18,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
   openAssessment,
   openOllamaModal,
   openHacktoberfestModal,
+  openScreenshotStudio,
   isOllamaConnected,
   activeModelName,
 }) => {
@@ -88,8 +90,17 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
           </button>
 
           <button
+            onClick={openScreenshotStudio}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-teal-800 bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
+            title="Download Real Screenshots of this site"
+          >
+            <Camera className="w-3.5 h-3.5 text-teal-700" />
+            <span className="hidden sm:inline">Live Screenshots</span>
+          </button>
+
+          <button
             onClick={openHacktoberfestModal}
-            className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-teal-800 bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
+            className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
           >
             <Sparkles className="w-3.5 h-3.5 text-teal-600" />
             <span className="hidden md:inline">Build for a Friend</span>

@@ -35,9 +35,9 @@ export const ConfidenceCenter: React.FC<ConfidenceCenterProps> = ({
   const correctQuestions = Object.values(profile.practiceQuestionScores).filter(Boolean).length;
   const knowledgeScore = totalQuestions > 0 ? Math.round((correctQuestions / totalQuestions) * 100) : 0;
 
-  // Pillar 3: Skills Readiness (Skills marked rehearsed out of 12 priority skills)
+  // Pillar 3: Skills Readiness (Skills marked rehearsed out of 23 official Credentia skills)
   const skillsRehearsed = profile.rehearsedSkillIds.length;
-  const skillsScore = Math.min(100, Math.round((skillsRehearsed / 8) * 100));
+  const skillsScore = Math.min(100, Math.round((skillsRehearsed / SC_OFFICIAL_SKILLS.length) * 100));
 
   // Pillar 4: Test Day Protocol (Checklist completed)
   const testDayScore = Math.min(100, Math.round((profile.completedChecklistIds.length / 7) * 100));
@@ -131,7 +131,7 @@ export const ConfidenceCenter: React.FC<ConfidenceCenterProps> = ({
           {
             label: 'Skills Rehearsal',
             score: skillsScore,
-            desc: `${skillsRehearsed} skills practiced`,
+            desc: `${skillsRehearsed} of ${SC_OFFICIAL_SKILLS.length} skills practiced`,
             tab: 'skills',
           },
           {

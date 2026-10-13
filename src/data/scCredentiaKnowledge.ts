@@ -515,6 +515,336 @@ export const SC_OFFICIAL_SKILLS: CNASkill[] = [
       'Doing fast, jerky movements instead of slow, controlled stretches.'
     ],
     officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'elastic-stocking',
+    name: 'Applies One Knee-High Elastic Stocking',
+    category: 'Basic Restorative & Mobility',
+    durationEstimateMinutes: 5,
+    equipmentNeeded: ['One knee-high elastic stocking (TED hose)', 'Resident supine in bed'],
+    criticalSteps: [
+      'Turns stocking inside out, at least to the heel, before placing onto resident foot.',
+      'Places foot of stocking over resident toes, foot, and heel, with the heel of the stocking centered squarely over the resident heel.',
+      'Pulls and smooths stocking up leg without any twists, bunches, rolls, or wrinkles, with the top of stocking resting 1-2 inches below the patella (knee bend).'
+    ],
+    procedureSteps: [
+      'Knock, introduce self, explain procedure, wash hands, provide privacy.',
+      'Ensure resident is lying comfortably supine in good body alignment.',
+      'Expose only the leg receiving the stocking.',
+      'Turn stocking inside out down to the heel pocket, creating a smooth toe sleeve.',
+      'Ease stocking over resident toes, foot, and heel, aligning the heel pocket securely.',
+      'Gently pull and gather remaining stocking up the calf toward the knee.',
+      'Check that toe area is smooth with no tight constriction over toes, heel is centered, and no wrinkles or rolled top band exist.',
+      'Cover resident with top sheet, lower bed, place call bell within reach, wash hands.'
+    ],
+    commonMistakes: [
+      'Bunching the entire stocking and forcing it over foot without turning inside out first.',
+      'Leaving a rolled band at the top of the stocking (acts as a venous tourniquet, causing blood clots).',
+      'Leaving wrinkles in the fabric against fragile skin.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'denture-care',
+    name: 'Cleans Upper or Lower Denture',
+    category: 'Personal Care',
+    durationEstimateMinutes: 6,
+    equipmentNeeded: ['Denture cup with lid', 'Toothbrush or denture brush', 'Denture cleanser or toothpaste', 'Small towel or washcloth for sink lining', 'Gloves'],
+    criticalSteps: [
+      'Lines bottom of sink with a clean protective towel or washcloth, or fills sink with moderate level of water, BEFORE cleaning dentures over sink.',
+      'Applies approved denture cleanser or toothpaste to brush.',
+      'Brushes inner, outer, and chewing/groove surfaces of denture thoroughly.',
+      'Rinses denture completely under moderate temperature running water (never uses hot water).',
+      'Places cleaned denture into clean, labeled denture cup filled with cool clean water or soaking solution, and secures lid.'
+    ],
+    procedureSteps: [
+      'Put on clean examination gloves.',
+      'Line sink basin with clean towel or fill halfway with cool water to protect against chipping if dropped.',
+      'Open denture cup and inspect dentures.',
+      'Apply toothpaste or denture paste to brush.',
+      'Brush inner surface that contacts gums, outer surface, and chewing edges under moderate running water.',
+      'Rinse denture completely under cool running water to eliminate all paste residue.',
+      'Rinse denture cup, place denture inside, fill with cool clean water, and cover with lid.',
+      'Rinse toothbrush, remove sink lining and dispose in linen hamper, clean basin, remove gloves, wash hands.'
+    ],
+    commonMistakes: [
+      'Brushing dentures over an empty, unlined hard porcelain sink (shatters if dropped).',
+      'Using hot water (warps denture acrylic, destroying comfortable fit).',
+      'Handling resident dentures without gloves.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'dressing-weak-arm',
+    name: 'Dresses Resident with Affected (Weak) Right or Left Arm',
+    category: 'Personal Care',
+    durationEstimateMinutes: 7,
+    equipmentNeeded: ['Two choices of shirts/blouses with front buttons', 'Bath blanket/sheet for privacy'],
+    criticalSteps: [
+      'Dresses the affected (weak) arm FIRST by inserting sleeve over the affected arm before the unaffected arm.',
+      'Undresses the unaffected (strong) arm FIRST before removing garment from the affected arm.',
+      'Handles resident extremities gently, supporting joints and avoiding hyperextension or pulling.'
+    ],
+    procedureSteps: [
+      'Knock, greet resident, explain dressing procedure, wash hands, provide privacy.',
+      'Offer resident a choice between two shirts and honor their selection.',
+      'Place bath blanket over resident and remove top sheet to maintain warmth and dignity.',
+      'To undress: gently slide garment off the unaffected (strong) arm first, then ease off the affected (weak) arm.',
+      'To dress: gather sleeve and slide gently over the affected (weak) arm first up to shoulder, then have resident reach through opposite sleeve with strong arm.',
+      'Button shirt smoothly, straighten clothing, remove bath blanket, leave resident comfortable, place call bell, wash hands.'
+    ],
+    commonMistakes: [
+      'Dressing the strong arm first (causes extreme pain and strain on the paralyzed or weak limb).',
+      'Pulling aggressively on resident fingers or wrist.',
+      'Leaving resident exposed without a privacy drape.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'feeding-resident',
+    name: 'Feeds Resident Who Cannot Feed Self',
+    category: 'Measurement',
+    isMeasurement: true,
+    durationEstimateMinutes: 8,
+    equipmentNeeded: ['Meal tray with food and beverage', 'Clothing protector or napkin', 'Wet wipe / washcloth for resident hands', 'Recording sheet', 'Pen'],
+    criticalSteps: [
+      'Assists resident to an upright sitting position (75 to 90 degrees, high Fowler’s) before offering any food or fluid.',
+      'Performs or assists resident with hand hygiene before meal begins.',
+      'Sits in a chair placed at resident eye level facing the resident while assisting with meal.',
+      'Offers food in small, manageable spoonfuls, asks resident what they prefer to eat first, and ensures resident has swallowed each bite before offering another.',
+      'Records meal consumption percentage accurately on Credentia recording sheet within +/- 25% of Evaluator calculation, and fluid intake in mL within +/- 25 mL.'
+    ],
+    procedureSteps: [
+      'Introduce self, wash hands, confirm resident identity matching diet card.',
+      'Elevate head of bed to 75-90 degrees.',
+      'Clean resident hands with moist wipe or cloth.',
+      'Wipe overbed table and position meal tray.',
+      'Sit facing resident at eye level.',
+      'Describe food items on tray, ask resident preferences for first bite.',
+      'Offer small spoonfuls of food, alternating with sips of beverage.',
+      'Confirm resident has completely swallowed before offering next spoonful.',
+      'When finished, wipe resident mouth and hands, remove meal tray, leave resident upright (at least 30 min) to prevent aspiration.',
+      'Record food intake percentage and fluid consumed on Credentia recording sheet immediately.'
+    ],
+    commonMistakes: [
+      'Feeding resident while semi-reclined (critical choking/aspiration pneumonia risk).',
+      'Standing over the resident while feeding instead of sitting at eye level.',
+      'Rushing food without verifying each bite has been swallowed.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'modified-bed-bath',
+    name: 'Gives Modified Bed Bath (Face and One Arm, Hand and Underarm)',
+    category: 'Personal Care',
+    durationEstimateMinutes: 10,
+    equipmentNeeded: ['Basin with warm water (105°F)', 'Soap', '2-3 washcloths', '2 towels', 'Bath blanket', 'Clean gown', 'Gloves'],
+    criticalSteps: [
+      'Tests water temperature on inner wrist and asks resident to verify water temperature is comfortable.',
+      'Washes eyes gently with wet washcloth WITHOUT soap, wiping from inner canthus to outer canthus using a clean area of the cloth for each stroke.',
+      'Washes, rinses, and pats dry face without soap (or soap only upon explicit resident request).',
+      'Places protective towel under arm, washes arm, hand, and axilla (underarm) with soap, rinses thoroughly, and pats dry.',
+      'Applies clean gown while keeping resident draped for privacy and warmth throughout.'
+    ],
+    procedureSteps: [
+      'Wash hands, greet resident, explain bath, pull privacy curtain.',
+      'Fill basin with warm water, test temperature on inner wrist, offer resident to test with fingers.',
+      'Put on clean gloves, place bath blanket over resident, and remove soiled gown under blanket.',
+      'Clean eyes from inner to outer canthus with warm water only, using separate clean folds of cloth.',
+      'Wash face, ears, and neck with water, pat dry with towel.',
+      'Expose one arm: place towel underneath, wash arm, hand, fingernails, and axilla with soap.',
+      'Rinse arm, hand, and axilla with wet washcloth; pat completely dry with towel.',
+      'Assist into clean gown, remove bath blanket, empty and dry basin, dispose of linens, remove gloves, wash hands.'
+    ],
+    commonMistakes: [
+      'Using soap on or near resident eyes (causes chemical irritation and eye injury).',
+      'Wiping eyes from outer canthus toward inner canthus (spreads bacteria into tear duct).',
+      'Leaving resident underarm or skin folds damp without patting dry.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'measuring-weight',
+    name: 'Measures and Records Weight of Ambulatory Resident',
+    category: 'Measurement',
+    isMeasurement: true,
+    durationEstimateMinutes: 5,
+    equipmentNeeded: ['Standing balance beam or digital scale', 'Non-skid footwear', 'Recording sheet', 'Pen'],
+    criticalSteps: [
+      'Ensures resident is wearing non-skid footwear before standing and walking to scale.',
+      'Zeros / balances the scale to zero (0.0 lb) before resident steps onto the platform.',
+      'Stands close to resident to provide physical stability and fall protection while resident steps on, stands centered, and steps down.',
+      'Records weight measurement on candidate recording sheet within +/- 2 lbs of Evaluator measurement.'
+    ],
+    procedureSteps: [
+      'Greet resident, explain procedure, wash hands.',
+      'Ensure resident has non-skid shoes securely on feet.',
+      'Calibrate scale to zero: verify beam indicator balances level or digital display shows 0.0.',
+      'Assist resident to step onto center of scale platform.',
+      'Instruct resident to stand upright and keep hands off walls or rails while balancing.',
+      'Adjust weights until balance indicator rests centered, read value.',
+      'Assist resident safely off scale and return to comfortable seating.',
+      'Document weight on recording sheet immediately, wash hands.'
+    ],
+    commonMistakes: [
+      'Failing to zero the scale before resident steps on.',
+      'Allowing resident to step onto scale in slippery stocking feet.',
+      'Recording weight outside the +/- 2 lb allowable variance.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'range-of-motion-knee-ankle',
+    name: 'Range of Motion (ROM) Exercises — Knee and Ankle',
+    category: 'Basic Restorative & Mobility',
+    durationEstimateMinutes: 6,
+    equipmentNeeded: ['Resident supine in bed (no external equipment)'],
+    criticalSteps: [
+      'Supports resident leg at knee joint with one hand and under ankle/heel with other hand throughout movements.',
+      'Performs flexion and extension of knee (bending toward chest and straightening) smoothly at least 3 times unless pain occurs.',
+      'Performs dorsiflexion and plantar flexion of ankle (pushing foot toward head and pointing toes down) smoothly at least 3 times.',
+      'Asks resident throughout if they feel any pain or discomfort, and ceases exercise immediately if pain is indicated.'
+    ],
+    procedureSteps: [
+      'Greet resident, identify self, explain ROM, wash hands, ensure privacy.',
+      'Position resident comfortably supine in good body alignment.',
+      'Place one hand under resident knee and one hand under ankle to support joints.',
+      'Flex knee by gently moving toward chest, then extend leg back flat (flexion/extension x 3).',
+      'Support ankle and foot: gently push foot up toward head (dorsiflexion) and point toes downward (plantar flexion) x 3.',
+      'Ask resident if they feel any pain after each set of movements.',
+      'Align resident comfortably, lower bed, place call bell within reach, wash hands.'
+    ],
+    commonMistakes: [
+      'Failing to support both the knee and ankle joints simultaneously.',
+      'Moving joint past resistance or ignoring verbal/nonverbal pain signals.',
+      'Performing jerky, fast movements.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'catheter-care-female',
+    name: 'Provides Catheter Care for Female Resident',
+    category: 'Personal Care',
+    durationEstimateMinutes: 8,
+    equipmentNeeded: ['Basin with warm water (105°F)', 'Soap', '2-3 washcloths', 'Towel', 'Barrier pad', 'Gloves'],
+    criticalSteps: [
+      'Tests water temperature on inner wrist and asks resident to verify temperature is comfortable.',
+      'Puts on clean gloves and places protective barrier beneath resident hips.',
+      'While holding catheter tubing securely near urinary meatus with one hand to prevent pulling or tension, washes at least 4 inches of catheter tubing moving AWAY from meatus in one direction with soapy cloth.',
+      'Rinses at least 4 inches of catheter tubing with clean wet cloth moving away from meatus in downward direction.',
+      'Dries catheter tubing gently with clean towel, removes barrier, disposes of equipment, removes gloves, washes hands.'
+    ],
+    procedureSteps: [
+      'Wash hands, greet resident, explain procedure, pull privacy curtain.',
+      'Test water temperature and confirm with resident.',
+      'Put on clean gloves, place barrier pad under hips, drape resident exposing only catheter site.',
+      'Hold catheter securely with fingers near meatus without pulling on urethra.',
+      'Wipe tubing away from body at least 4 inches with soapy washcloth (never back-and-forth).',
+      'Rinse with wet washcloth wiping away from body at least 4 inches.',
+      'Pat dry gently with clean towel.',
+      'Ensure tubing is free of kinks and drainage bag is hung below bladder level on bed frame (not side rail).',
+      'Dispose of linens and water, remove gloves, wash hands.'
+    ],
+    commonMistakes: [
+      'Tugging or pulling on catheter tubing at meatus (severe pain and tissue damage).',
+      'Wiping toward the meatus (pushes bacteria straight up urinary tract causing CAUTI).',
+      'Hanging drainage bag higher than bladder level or on moving bed rail.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'foot-care',
+    name: 'Provides Foot Care on One Foot',
+    category: 'Personal Care',
+    durationEstimateMinutes: 8,
+    equipmentNeeded: ['Basin with warm water (105°F)', 'Soap', 'Washcloth', '2 towels', 'Lotion', 'Gloves'],
+    criticalSteps: [
+      'Tests water temperature on inner wrist and asks resident to verify comfort.',
+      'Submerges foot in warm water basin and washes foot with soap, including between all toes.',
+      'Rinses foot thoroughly, ensuring soap is rinsed completely from between toes.',
+      'Dries entire foot thoroughly with clean towel, paying special attention to drying completely BETWEEN TOES.',
+      'Applies lotion to top and sole of foot, removes excess with towel, and NEVER applies lotion between toes.'
+    ],
+    procedureSteps: [
+      'Introduce self, wash hands, explain foot care, pull curtain.',
+      'Check water temperature on inner wrist, offer resident to test with toes/fingers.',
+      'Put on clean gloves, place protective towel on floor, position basin.',
+      'Immerse resident foot in warm water to soak briefly.',
+      'Wash foot with soapy washcloth, gently washing between every toe.',
+      'Rinse foot thoroughly, ensuring all soap residue is removed from between toes.',
+      'Dry foot thoroughly with towel, separating toes to ensure skin is completely dry.',
+      'Warm lotion in hands, massage onto top and bottom of foot; wipe excess with towel.',
+      'Put on clean sock and shoe, empty and dry basin, remove gloves, wash hands.'
+    ],
+    commonMistakes: [
+      'Leaving lotion between toes (causes moisture buildup, skin maceration, and fungal growth).',
+      'Failing to dry thoroughly between toes.',
+      'Placing foot into water without testing temperature.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'mouth-care-teeth',
+    name: 'Provides Mouth Care (Brushing Teeth)',
+    category: 'Personal Care',
+    durationEstimateMinutes: 7,
+    equipmentNeeded: ['Toothbrush', 'Toothpaste', 'Cup of water', 'Emesis basin', 'Towel barrier', 'Gloves'],
+    criticalSteps: [
+      'Assists resident to an upright sitting position (75 to 90 degrees) before beginning mouth care to prevent aspiration.',
+      'Puts on clean gloves and places protective towel across resident chest.',
+      'Applies toothpaste to wet toothbrush and gently cleans all surfaces of teeth (inner, outer, and chewing surfaces) and gumline.',
+      'Gently cleans surface of resident tongue.',
+      'Holds emesis basin under resident chin while resident rinses mouth with clean water and spits, then pats mouth dry.'
+    ],
+    procedureSteps: [
+      'Greet resident, explain brushing, wash hands, provide privacy.',
+      'Raise head of bed to 75-90 degrees (high Fowler’s).',
+      'Put on clean gloves, place towel barrier over chest.',
+      'Moisten toothbrush with water, apply small ribbon of toothpaste.',
+      'Clean upper and lower teeth, gums, and roof of mouth with gentle circular strokes.',
+      'Gently brush tongue from back to front.',
+      'Offer water to rinse, hold basin to chin as resident spits.',
+      'Repeat until mouth is clean, wipe resident face and chin.',
+      'Rinse toothbrush, dry equipment, dispose of towel, remove gloves, wash hands.'
+    ],
+    commonMistakes: [
+      'Brushing teeth while resident is semi-reclined or lying down (aspiration hazard).',
+      'Forgetting to brush tongue or inner surfaces of teeth.',
+      'Touching soiled toothbrush directly to clean table surfaces.'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
+  },
+  {
+    id: 'making-occupied-bed',
+    name: 'Makes an Occupied Bed',
+    category: 'Safety & Positioning',
+    durationEstimateMinutes: 10,
+    equipmentNeeded: ['Clean bottom fitted/flat sheet', 'Draw sheet (if used)', 'Clean top sheet', 'Clean pillowcase', 'Gloves', 'Laundry hamper'],
+    criticalSteps: [
+      'Raises bed to comfortable working height and raises side rail on opposite turning side for resident safety.',
+      'Keeps resident covered with a top sheet or bath blanket throughout procedure to maintain warmth and privacy.',
+      'Rolls soiled bottom linen toward resident with soiled side rolled inward, and tucks snug against resident back.',
+      'Applies clean bottom sheet to exposed mattress, unrolls toward resident, and tucks clean roll under soiled roll.',
+      'Turns resident to opposite side over linen roll, removes soiled linens directly into hamper (never touches floor or uniform), pulls clean linens taut without wrinkles, and leaves a toe pleat at foot of bed.'
+    ],
+    procedureSteps: [
+      'Knock, introduce self, wash hands, explain linen change, ensure privacy.',
+      'Raise bed to ergonomic working height, flatten head of bed if tolerated.',
+      'Raise side rail on far side, assist resident to turn toward raised rail.',
+      'Loosen soiled bottom linens on near side, roll inward tightly against resident back.',
+      'Place clean bottom sheet on mattress, fanfold/roll clean center edge under dirty roll.',
+      'Raise near rail, move to opposite side, assist resident to turn over roll onto clean side.',
+      'Lower opposite rail, remove soiled linen directly into laundry bag.',
+      'Pull clean bottom sheet through, smoothing all wrinkles taut.',
+      'Center top sheet, tuck at foot of bed, make mitered corners, and create a 2-3 inch toe pleat for foot comfort.',
+      'Change pillowcase supporting head, lower bed to lowest position, place call light in reach, wash hands.'
+    ],
+    commonMistakes: [
+      'Leaving wrinkles in bottom sheet (creates friction and leads to decubitus pressure ulcers).',
+      'Shaking dirty linens or placing dirty linens on the floor or chairs.',
+      'Failing to create a toe pleat at the foot of the bed (causes foot drop and pressure on toes).'
+    ],
+    officialSourceUrl: 'https://kb-sc.credentia.com/en/article/skills'
   }
 ];
 

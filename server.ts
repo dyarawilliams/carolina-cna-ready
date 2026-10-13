@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { GoogleGenAI } from '@google/genai';
 import { SC_KNOWLEDGE_ARTICLES, SC_OFFICIAL_SKILLS } from './src/data/scCredentiaKnowledge';
 
@@ -266,6 +267,9 @@ Analyze:
   });
 });
 
+// Serve public assets statically (favicons, og-image, etc.)
+app.use(express.static(path.resolve('public')));
+
 // Serve frontend in production or through Vite in development
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
@@ -280,7 +284,30 @@ async function startServer() {
   } else {
     app.use(express.static(path.resolve('dist')));
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve('dist', 'index.html'));
+      const indexPath = path.resolve('dist', 'index.html');
+      if (fs.existsSync(indexPath)) {
+        let html = fs.readFileSync(indexPath, 'utf-8');
+        const proto = req.get('x-forwarded-proto') || req.protocol || 'https';
+        const host = req.get('host') || 'localhost:3000';
+        const origin = `${proto}://${host}`;
+        const absoluteOgImage = `${origin}/og-image.jpg`;
+        const canonicalUrl = `${origin}${req.path}`;
+        
+        // Replace relative OG image tags with absolute URLs for external scrapers
+        html = html.replace(/content="\/og-image\.jpg"/g, `content="${absoluteOgImage}"`);
+        html = html.replace(/href="\/" id="canonical-url"/g, `href="${canonicalUrl}" id="canonical-url"`);
+        
+        // Inject absolute og:url if not present
+        if (!html.includes('property="og:url"')) {
+          html = html.replace(
+            '</head>',
+            `  <meta property="og:url" content="${canonicalUrl}" />\n  </head>`
+          );
+        }
+        res.setHeader('Content-Type', 'text/html; charset=utf-8');
+        return res.send(html);
+      }
+      res.sendFile(indexPath);
     });
   }
 

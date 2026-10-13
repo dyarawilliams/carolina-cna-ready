@@ -24,6 +24,7 @@ import { ConfidenceCenter } from './components/ConfidenceCenter';
 import { StartingPointModal } from './components/StartingPointModal';
 import { HacktoberfestModal } from './components/HacktoberfestModal';
 import { OllamaSettingsModal } from './components/OllamaSettingsModal';
+import { ScreenshotStudio } from './components/ScreenshotStudio';
 import { CandidateProfile, CoachMessage, JourneyStageId } from './types/journey';
 
 const STORAGE_KEY = 'carolina_cna_ready_profile_v1';
@@ -60,6 +61,7 @@ export default function App() {
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
   const [isOllamaModalOpen, setIsOllamaModalOpen] = useState(false);
   const [isHackModalOpen, setIsHackModalOpen] = useState(false);
+  const [isScreenshotStudioOpen, setIsScreenshotStudioOpen] = useState(false);
 
   // Ollama configuration
   const [preferOllama, setPreferOllama] = useState(false);
@@ -179,6 +181,7 @@ export default function App() {
         openAssessment={() => setIsAssessmentOpen(true)}
         openOllamaModal={() => setIsOllamaModalOpen(true)}
         openHacktoberfestModal={() => setIsHackModalOpen(true)}
+        openScreenshotStudio={() => setIsScreenshotStudioOpen(true)}
         isOllamaConnected={isOllamaConnected}
         activeModelName={modelName}
       />
@@ -355,6 +358,7 @@ export default function App() {
       <HacktoberfestModal
         isOpen={isHackModalOpen}
         onClose={() => setIsHackModalOpen(false)}
+        openScreenshotStudio={() => setIsScreenshotStudioOpen(true)}
       />
 
       <OllamaSettingsModal
@@ -369,6 +373,13 @@ export default function App() {
           setModelName(modelName);
         }}
         onCheckOllamaConnection={checkOllama}
+      />
+
+      <ScreenshotStudio
+        isOpen={isScreenshotStudioOpen}
+        onClose={() => setIsScreenshotStudioOpen(false)}
+        profile={profile}
+        onUpdateProfile={setProfile}
       />
     </div>
   );

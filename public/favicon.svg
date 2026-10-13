@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Shield -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#tealGrad)" stroke="#14b8a6" stroke-width="2" />
+  
+  <!-- Medical Cross / Shield Symbol -->
+  <path d="M32 14 C32 14, 46 18, 46 27 C46 40, 32 49, 32 49 C32 49, 18 40, 18 27 C18 18, 32 14, 32 14 Z" 
+        fill="#042f2e" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linejoin="round" />
+  
+  <!-- Stethoscope / Medical Heart Line inside Shield -->
+  <!-- Cross in Center -->
+  <rect x="29" y="23" width="6" height="16" rx="2" fill="#2dd4bf" />
+  <rect x="24" y="28" width="16" height="6" rx="2" fill="#2dd4bf" />
+  
+  <!-- Small Star / Palmetto Sparkle Accent -->
+  <circle cx="32" cy="18" r="2" fill="#facc15" />
+</svg>
